@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Upcoming Events</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <header>
+        <nav class="nav navbar navbar-expand-md fixed-top p-2">
+          <div class="container-fluid">
+            <a href="./index.html">
+              <img class="navbar-img logo-header" src="./assets/img/amazing_brand.png" alt="Logo" width="96" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end py-4 py-lg-0" id="navbarNav">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item text-center">
+                        <a class="nav-link btn btn-dark fs-5 fw-bold" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link btn btn-dark fs-5 fw-bold" href="./upcoming_events.html">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link btn btn-dark fs-5 fw-bold" href="./past_events.html">Past Events</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link btn btn-dark fs-5 fw-bold" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link btn btn-dark fs-5 fw-bold" href="./stats.html">Stats</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="carrousel">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/optional_banner_4.jpg" class="d-block w-100" alt="opt4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/optional_banner_1.jpg" class="d-block w-100" alt="opt1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/optional_banner_2.jpg" class="d-block w-100" alt="opt2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/optional_banner_5.jpg" class="d-block w-100" alt="opt5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/optional_banner_3.jpg" class="d-block w-100" alt="opt3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="titulo">
+            <h1>Upcoming Events</h1>
+        </div>
+    </Section>
+    <fieldset class="fieldset1">
+        <label>
+            <input type="checkbox" name="grade" value="Category1">
+            <span>Food Fair</span>
+        </label>
+        <label>
+            <input type="checkbox" name="grade" value="Category2">
+            <span>Museum</span>
+        </label>
+        <label>
+            <input type="checkbox" name="grade" value="Category3">
+            <span>Costume Party</span>
+        </label>
+        <label>
+            <input type="checkbox" name="grade" value="Category4">
+            <span>Music Concert</span>
+        </label>
+        <label>
+            <input type="checkbox" name="grade" value="Category5">
+            <span>Race</span>
+        </label>
+        <label>
+            <input type="checkbox" name="grade" value="Category5">
+            <span>Book Exchange</span>
+        </label>
+        <label>
+            <input type="checkbox" name="grade" value="Category5">
+            <span>Cinema</span>
+        </label>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </fieldset>
+    <div class="cardsection py-2 px-3">
+        <div class="row g-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card text-center text-bg-secondary mb-3">
+                    <img src="./assets/img/food_fair.jpg" class="card-img-top" alt="books">
+                    <div class="card-body">
+                        <h5 class="card-title">Festival of the collectivities</h5>
+                        <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for the whole family.</p>
+                        <p>Date: 2023-12-12<br>5$</p>
+                        <a href="./details.html" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card text-center text-bg-secondary mb-3">
+                    <img src="./assets/img/cinema.jpg" class="card-img-top" alt="party">
+                    <div class="card-body">
+                        <h5 class="card-title">Avengers</h5>
+                        <p class="card-text">Marvel's Avengers 3d the start of an epic saga with best superheroes</p>
+                        <p>Date: 2023-10-15<br>250$</p>
+                        <a href="./details.html" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card text-center text-bg-secondary mb-3">
+                    <img src="./assets/img/music_concert.jpg" class="card-img-top" alt="marathon">
+                    <div class="card-body">
+                        <h5 class="card-title">Metallica in concert</h5>
+                        <p class="card-text">The only concert of the most emblematic band in the world</p>
+                        <p>Date: 2024-01-22<br>150$</p>
+                        <a href="./details.html" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div class="card text-center text-bg-secondary mb-3">
+                    <img src="./assets/img/costume_party.jpg" class="card-img-top" alt="music">
+                    <div class="card-body">
+                        <h5 class="card-title">Halloween Night</h5>
+                        <p class="card-text">Come in your scariest costume character to win amazing prizes.</p>
+                        <p>Date:2024-02-12 <br>12$</p>
+                        <a href="./details.html" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3">
+    <div id="ccard_img">
+        <a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="facebook"></a>
+        <a href="http://www.instagram.com"><img src="./assets/img/instagram.png" alt="instagram"></a>
+        <a href="http://www.whatsapp.com"><img src="./assets/img/whatsapp.png" alt="whatsapp"></a>
+    </div>
+    <h4 class="footer-title">Mindhub Group TT02</h4>
+</footer>
+</body>
+</html>
