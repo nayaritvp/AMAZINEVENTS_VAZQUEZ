@@ -2,30 +2,30 @@ nav {
     background-color:gainsboro!important;
 }
 .carrousel {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    height: 100%!important;
+    width: 100%!important;
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    text-align: center!important;
 }
 .titulo {
-    text-align: center;
-    font-weight: 700;
-    position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
+    text-align: center!important;
+    font-weight: 700!important;
+    position: absolute!important;
+    color: white!important;
+    background-color: rgba(0, 0, 0, 0.5)!important;
+    width: 100%!important;
 }
 .formularios {
-    display: flex;
+    display: flex!important;
 }
 .fieldset1 {
-    margin: 10px;
-    display: flex;
-    justify-content: space-evenly;
+    margin: 10px!important;
+    display: flex!important;
+    justify-content: space-evenly!important;
 }
 footer {
-    background-color: gainsboro;
-    padding: 10px;
+    background-color: gainsboro!important;
+    padding: 10px!important;
 }
