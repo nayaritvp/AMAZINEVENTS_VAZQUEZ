@@ -1,6 +1,9 @@
 nav {
     background-color:gainsboro!important;
 }
+main {
+    flex-grow: 1;
+}
 .carrousel {
     height: 100%!important;
     width: 100%!important;
@@ -10,7 +13,7 @@ nav {
     text-align: center!important;
 }
 .carousel-item{
-    height: 500px!important;
+    height: 400px!important;
     object-fit: cover!important;
 }
 .titulo {
@@ -30,5 +33,6 @@ nav {
 }
 footer {
     background-color: gainsboro!important;
-    padding: 10px!important;
+    padding: 2px;
+    border-top: solid maroon 2px;
 }
