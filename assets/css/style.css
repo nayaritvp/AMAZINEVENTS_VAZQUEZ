@@ -9,13 +9,16 @@ nav {
     justify-content: center!important;
     text-align: center!important;
 }
+.carousel-item{
+    height: 500px!important;
+    object-fit: cover!important;
+}
 .titulo {
     text-align: center!important;
-    font-weight: 700!important;
-    position: absolute!important;
+    position: absolute;
     color: white!important;
     background-color: rgba(0, 0, 0, 0.5)!important;
-    width: 100%!important;
+    width: 100vw;
 }
 .formularios {
     display: flex!important;
