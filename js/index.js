@@ -1,4 +1,4 @@
-let cardsContent = document.getElementById('contenedorevents');
+const cardsContent = document.getElementById('contenedorevents');
 
 function createCard(events) {
   const card = document.createElement("div");
