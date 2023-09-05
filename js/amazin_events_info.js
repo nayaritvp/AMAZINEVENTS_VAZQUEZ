@@ -194,22 +194,3 @@ const data = {
     },
   ],
 };
-
-
-
-function createCard(eventos){
-  let contenedorevents = document.getElementById("contenedorevents")
-  let card = `<div class="col-12 col-sm-6 col-md-4 col-xl-3">
-  <div class="card d-flex h-100 text-center text-bg-secondary mb-3 my-3">
-      <img src="${eventos.image}" class="card-img-top" alt="${eventos.name}">
-      <div class="card-body">
-          <h5 class="card-title">${eventos.name}</h5>
-          <h5 class="card-title">${eventos.date}</h5>
-          <p class="card-text">${eventos.description}</p>
-          <p>$${eventos.price}</p>
-          <a href="#" class="btn btn-light">details</a>
-      </div>
-  </div>
-</div>`;
-contenedorevents.innerHTML += card;
-}

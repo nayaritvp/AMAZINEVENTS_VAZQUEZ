@@ -75,40 +75,13 @@
             <h2>Upcoming Events</h2>
         </div>
     </Section>
-    <fieldset class="fieldset1">
-        <label>
-            <input type="checkbox" name="grade" value="Category1">
-            <span>Food Fair</span>
-        </label>
-        <label>
-            <input type="checkbox" name="grade" value="Category2">
-            <span>Museum</span>
-        </label>
-        <label>
-            <input type="checkbox" name="grade" value="Category3">
-            <span>Costume Party</span>
-        </label>
-        <label>
-            <input type="checkbox" name="grade" value="Category4">
-            <span>Music Concert</span>
-        </label>
-        <label>
-            <input type="checkbox" name="grade" value="Category5">
-            <span>Race</span>
-        </label>
-        <label>
-            <input type="checkbox" name="grade" value="Category5">
-            <span>Book Exchange</span>
-        </label>
-        <label>
-            <input type="checkbox" name="grade" value="Category5">
-            <span>Cinema</span>
-        </label>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-    </fieldset>
+    <div class="container d-flex">
+        <div id="checkevents" class="row gap-3 p-3 justify-content-center">
+        </div>
+        <div class="py-4 px-3">
+            <input id="buscador" class="form-control" type="text" placeholder="Events">
+        </div>
+    </div>
     <div class="cardsection py-4 px-3">
         <div class="row g-3" id="contenedorevents">
         </div>
