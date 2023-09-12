@@ -1,23 +1,34 @@
+let dataev = null
+
 const contenedorevents = document.getElementById('contenedorevents')
 const contenedorchevents = document.getElementById('checkevents')
 const buscador = document.getElementById('buscador')
 
-pintartarjeta(data.events,contenedorevents)
-
-let categorias = extraereventos(data.events)
-pintarcheck(categorias,contenedorchevents)
+let categorias = [];
 
 contenedorchevents.addEventListener("change", filtradoglobal)
-
 buscador.addEventListener("input", filtradoglobal)
 
+function traerDatos(){
+  fetch('https://mindhub-xj03.onrender.com/api/amazing')
+  .then(response => response.json())
+  .then(data => {
+    dataev = data
 
-//funciones
+    let categorias = extraereventos(data.events);
+    pintarcheck(categorias, contenedorchevents);
+    pintartarjeta(data.events, contenedorevents);
+
+    filtradoglobal();
+
+  })
+  .catch(error => console.log(error))
+}
 
 function createCard(eventos){
   return `<div class="col-12 col-sm-6 col-md-4 col-xl-3">
   <div class="card d-flex h-100 text-center text-bg-secondary mb-3 my-3">
-      <img src="${eventos.image}" class="card-img-top" alt="${eventos.name}">
+  <img src="${eventos.image}" class="card-img-top custom-image" alt="${eventos.name}">
       <div class="card-body">
           <h5 class="card-title">${eventos.name}</h5>
           <h5 class="card-title">${eventos.date}</h5>
@@ -72,6 +83,7 @@ function filtrartexto(arreglo, texto){
   return arreglofiltrado
 }
 
+
 function filtrarcategorias(arreglo) {
   let checkboxes = document.querySelectorAll(".form-check-input");
   let checkboxesazul = Array.from(checkboxes).filter(check => check.checked)
@@ -83,8 +95,12 @@ function filtrarcategorias(arreglo) {
   return arreglofiltrado;
 }
 
+
 function filtradoglobal(){
-  let filtro1 = filtrarcategorias(data.events)
+  if (dataev && dataev.events) {
+  let filtro1 = filtrarcategorias(dataev.events)
   let filtro2 = filtrartexto(filtro1,buscador.value)
   pintartarjeta(filtro2,contenedorevents)
+  }
 }
+traerDatos();
